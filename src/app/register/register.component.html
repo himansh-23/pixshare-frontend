@@ -1,0 +1,38 @@
+<div class="login-box">
+  <div class="left">
+    <h1>Register</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Enter User Email" type="text" formControlName="email"
+          [(ngModel)]="registerUserDetails.email">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Enter User Name" type="text" formControlName="username"
+          [(ngModel)]="registerUserDetails.userName">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Enter User Password" type="text" formControlName="password"
+          [(ngModel)]="registerUserDetails.password">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Enter User MobileNumber" type="text" formControlName="mobilenumber"
+          [(ngModel)]="registerUserDetails.mobileNumber">
+      </mat-form-field>
+
+      <button mat-raised-button type="submit"> Register</button>
+      <button mat-raised-button class="loginbutton">Login</button>
+    </form>
+  </div>
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+
+    <button class="social-signin facebook">Log in with facebook</button>
+    <button class="social-signin twitter">Log in with Twitter</button>
+    <button class="social-signin google">Log in with Google+</button>
+  </div>
+ 
+
+</div>
