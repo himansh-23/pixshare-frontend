@@ -14,7 +14,6 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
 
   constructor(private userapi:UserapiService,private formBuilder: FormBuilder) {
-
     
     this.loginForm = this.formBuilder.group({
       'email': [this.loginDetails.email, [

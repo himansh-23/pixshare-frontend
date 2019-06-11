@@ -3,21 +3,18 @@
     <h1>Login</h1>
 
     <mat-form-field>
-      <input matInput placeholder="Email" type="text" [(ngModel)]="loginDetails.email">
+      <input matInput  placeholder="Email" type="text" [(ngModel)]="loginDetails.email">
     </mat-form-field>
 
     <mat-form-field>
       <input matInput placeholder="Password" type="password" [(ngModel)]="loginDetails.password">
     </mat-form-field>
 
-    <button mat-raised-button (click)="login()" > Login</button>
-    <button mat-raised-button > Create A Account</button>
+    <button mat-raised-button (click)="login()"> Login </button>
+    <button mat-raised-button style="margin-left: 4%;"> Create A Account</button>
 
-    <!-- <div class="forgot">
-
-      <a href="">forgot Password</a>
-
-    </div> -->
   </div>
-  <!-- <div class="right"></div> -->
+  <div class="right">
+  
+  </div>
 </div>
