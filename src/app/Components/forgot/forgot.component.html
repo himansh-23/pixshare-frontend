@@ -1,10 +1,20 @@
 <div class=forgot-box>
-<div >
-  <h2>Forgot Password</h2>
-  <mat-form-field >
-    <input matInput placeholder="Email" type="text" >
-  </mat-form-field>
-<br/>
-  <button mat-raised-button (click)="forgotPassword()">Submit</button>
-</div>
+  <div class="left">
+    <h2>Forgot Password</h2>
+    <mat-form-field>
+      <input matInput placeholder="Email" type="text">
+    </mat-form-field>
+    <br />
+      <button  mat-raised-button (click)="forgotPassword()">Submit</button>
+      <br />
+      <div style="margin-top:10%;">
+        <button mat-raised-button  routerLink="/login">Login</button>
+
+        <button style="margin-left: 5%;" routerLink="/register" mat-raised-button >Register</button>
+    
+    </div>
+  </div>
+  <div class=right>
+
+  </div>
 </div>
