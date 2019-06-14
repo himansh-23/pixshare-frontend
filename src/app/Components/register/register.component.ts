@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { RegisterDTO } from '../Models/register-model'
-import {UserapiService} from '../Services/userapi.service'
+import { RegisterDTO } from '../../Models/register-model'
+import {UserapiService} from '../../Services/userapi.service'
 
 @Component({
   selector: 'app-register',
