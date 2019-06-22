@@ -3,15 +3,13 @@
    border-style:solid;
    border-width:0px 2px 0px 0px ;
    border-color: black;
-    width:20%;
     height: 100%;
     min-width: 200px;
-   
 }
 
 .card-design{
     height:400px;
-    margin-top:50%;
+    margin-top:40%;
     margin-right:1%;
 }
 
@@ -41,3 +39,4 @@
     font-size: 20px;
     line-height: 20px;
 }
+

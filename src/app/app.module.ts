@@ -10,6 +10,7 @@ import { LoginComponent } from './Components/login/login.component';
 import { ForgotComponent } from './Components/forgot/forgot.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import {ResetpageComponent} from './Components/resetpage/resetpage.component';
+import { SinglepicComponent } from './Components/singlepic/singlepic.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {ResetpageComponent} from './Components/resetpage/resetpage.component';
     LoginComponent,
     ForgotComponent,
     DashboardComponent,
-    ResetpageComponent
+    ResetpageComponent,
+    SinglepicComponent
     
   ],
   imports: [

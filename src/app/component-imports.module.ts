@@ -6,6 +6,7 @@ import { HttpClientModule } from "@angular/common/http";
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [],
@@ -15,7 +16,8 @@ import {MatCardModule} from '@angular/material/card';
     HttpClientModule,
     MatButtonModule,
     MatToolbarModule,
-    MatCardModule],
+    MatCardModule,
+    FlexLayoutModule],
     
 
   exports: [MatFormFieldModule,
@@ -23,7 +25,8 @@ import {MatCardModule} from '@angular/material/card';
     HttpClientModule,
     MatButtonModule,
     MatToolbarModule,
-    MatCardModule]
+    MatCardModule,
+    FlexLayoutModule]
 })
 
 export class ComponentImportsModule { }
