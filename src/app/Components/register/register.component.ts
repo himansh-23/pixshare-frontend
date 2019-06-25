@@ -30,7 +30,6 @@ export class RegisterComponent implements OnInit {
           Validators.max(12)]],
           'mobilenumber':[this.registerUserDetails.mobileNumber,[
             Validators.required,
-            Validators.max(10),
             Validators.min(10)
           ]]
     });

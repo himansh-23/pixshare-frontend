@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImagefetchService } from 'src/app/Services/imagefetch.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  private ImageName:string[];
+  constructor(imagesdetails:ImagefetchService) {
+
+    imagesdetails.getImageDetailis(2).subscribe( details => {
+      this.ImageName=details});
+      
+   }
 
   ngOnInit() {
+    
   }
+
+
+
 
 }
