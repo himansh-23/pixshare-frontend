@@ -1,4 +1,5 @@
-import { Component, OnInit, NgModule } from '@angular/core';
+import { Component, OnInit, NgModule, Input } from '@angular/core';
+import { ImagefetchService } from 'src/app/Services/imagefetch.service';
 
 @Component({
   selector: 'app-singlepic',
@@ -7,7 +8,14 @@ import { Component, OnInit, NgModule } from '@angular/core';
 })
 export class SinglepicComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  imageurl:string;
+  
+  constructor(baseurl:ImagefetchService) {
+    
+   }
+
+  
 
   ngOnInit() {
   }
