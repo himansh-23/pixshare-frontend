@@ -10,7 +10,8 @@ const routes: Routes = [{path: 'register',component:RegisterComponent},
                         {path:'login',component:LoginComponent},
                         {path:'forgot',component:ForgotComponent},
                         {path:'dashboard',component:DashboardComponent},
-                        {path:'resetpage',component:ResetpageComponent}];
+                        {path:'resetpage',component:ResetpageComponent},
+                        {path:'', redirectTo:'login',pathMatch:"full"}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
