@@ -9,10 +9,11 @@ export class RouteguardService  implements CanActivate {
     private router: Router,){}
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot):boolean
   {
-    if(!localStorage.getItem('Token')){
+    if(localStorage.getItem('Token')){
       return true;
     }
     this.router.navigate(['/login']);
     return false;
+ 
   }
 }

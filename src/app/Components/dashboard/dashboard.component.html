@@ -1,46 +1,26 @@
-<mat-toolbar style="position:fixed; z-index: 1; ">
+<mat-toolbar style=" position: fixed;z-index: 1;top: 0;left: 0; ">
   <div style="margin-left:7%;"></div>
   <img src="../../../assets/facebook_profile_image.png" width="55px" height="55px" alt="pic">
   <p style="margin-left:10px;">Pixshare</p>
 </mat-toolbar>
-
-<div fxLayout="row" fxFill>
-  <div class="profile" fxFlex="20%" style="position:fixed;" fxShow [fxShow.md]="false" [fxShow.xs]="false" [fxShow.sm]="false" >
-    <pre> </pre>
-    <mat-card class="card-design">
-      <mat-card-title-group>
-        <img src="../../../assets/back.jpeg" class="fuf" width="80%" height="100%" alt="Profile pic">
-      </mat-card-title-group>
-      <div class="information">
-        <div class="add">himanshu00096@gmail.com</div>
-        <div class="adj">name</div>
+<div fxLayout="row" >
+  <div class="profile" fxFlex="20%" fxShow [fxShow.md]="false" [fxShow.xs]="false" fxFill [fxShow.sm]="false">
+    <img src="../../../assets/captain.jpg" class="fuf" width="65%" alt="Profile pic">
+    <div class="information">
+      <div class="adj">Himansh</div>
+      <br>
+      <div fxLayout="column" class=box_toggle>
+        <button mat-raised-button routerLink="home">Home</button>
+        <button mat-raised-button routerLink="about">About</button>
+        <button mat-raised-button routerLink="pics">Pic's</button>
+        <button mat-raised-button routerLink="followers">Followers</button>
+        <button mat-raised-button routerLink="following">Following</button>
       </div>
-    </mat-card>
-  </div>
-
-  <div fxLayout="column"  fxLayoutGap="5%" fxFlexOffset.lg="40%" fxFlexOffset.xs="0%"  fxFlexOffset.md="20%" fxFlexOffset.sm="16%"
-  [ngStyle.xs]="{'margin-top':'14%'}" [ngStyle.md]="{'margin-top':'5%'}" [ngStyle.sm]="{'margin-top':'10%'}"  [ngStyle.lg]="{'margin-top':'5%'}" [ngStyle.xl]="{'margin-top':'5%'}">
-    <!-- <app-singlepic>
-
-    </app-singlepic>
-
-    <app-singlepic>
-
-    </app-singlepic>
-
-    <app-singlepic>
-
-    </app-singlepic>
-
-    <app-singlepic>
-
-    </app-singlepic> -->
-
-    <div *ngFor = "let singlepic of ImageName">
-      <app-singlepic [imageurl]="singlepic">
-        
-      </app-singlepic>
-    </div> 
+    </div>
 
   </div>
+  <!-- Router Outlet for routing for home ,About ,Pic's, Followers and following -->
+  <router-outlet>
+
+  </router-outlet>
 </div>
