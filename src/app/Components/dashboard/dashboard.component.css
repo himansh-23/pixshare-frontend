@@ -1,14 +1,4 @@
-.profile{
-    display:block;
-    height: 100%;
-  width: 140px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  
-  
-}
+
 
 .card-design{
     height:400px;
@@ -17,15 +7,7 @@
     
 }
 
-.information{
-    margin-left: 12%;
-    
-}
-
 .fuf{
-    margin-left: 12%;
-    
-    margin-top: 20%;
     height: 250px;
     border-radius: 5%;
 }
@@ -42,11 +24,15 @@
 }
 
 .box_toggle{
-    max-width: 70%;
     border:1px solid lightslategrey;
 }
 
 button:hover{
     background-color:rgb(70, 70, 216);
+}
 
+.zindex{
+   margin-top: 5%;
+   margin-left:3%;
+   overflow: auto;
 }

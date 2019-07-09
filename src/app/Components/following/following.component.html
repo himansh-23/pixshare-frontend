@@ -1,3 +1,21 @@
-<p>
-  following works!
-</p>
+<div fxFlexOffset.lg="25%" fxFlexOffset.md="20%" fxFlexOffset.sm="10%" style="margin-top:3%;">
+    
+  <div fxLayout.lg="row wrap" fxLayout.md="row wrap" fxLayout.sm="row wrap" fxLayout.xs="row wrap" fxLayoutGap.lg="20px"  fxLayoutGap.md="20px" fxLayoutGap.sm="20px" fxLayoutGap.xs="20px" fxFlexOffset.xs="20px">
+    <div *ngFor="let user of users" >
+        
+      <mat-card [ngStyle.lg]="{'min-height': '80px'}" [ngStyle.md]="{'min-height': '80px'}" [ngStyle.sm]="{'min-height': '80px'}" [ngStyle.xs]="{'min-height': '80px','max-width':'160px'}">
+          <mat-card-header>
+        <mat-card-title style="font-size:10px;">{{user.userName}}</mat-card-title>
+        <img mat-card-avatar src="../../../assets/back.jpeg">
+        </mat-card-header>
+        <mat-card-content>
+        <button class="buttonloc" mat-raised-button color="primary" (click)="sendFollowRequest(user.id)"> Follow
+        </button>
+      </mat-card-content>
+      </mat-card>
+
+    </div>
+  </div>
+
+
+</div>

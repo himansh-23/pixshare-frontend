@@ -1,6 +1,9 @@
-<div fxLayout="column"  [ngStyle.xs]="{'margin-top':'14%'}" [ngStyle.md]="{'margin-top':'5%'}"
-[ngStyle.sm]="{'margin-top':'10%'}" [ngStyle.lg]="{'margin-top':'5%'}" [ngStyle.xl]="{'margin-top':'5%'}">
-
+<div fxLayout="column" fxFlexOffset.lg="40%" fxFlexOffset.md="30%" fxFlexOffset.sm="20%"  fxLayoutGap="2%" >
+<!-- 
+[ngStyle.xs]="{'margin-top':'14%'}" [ngStyle.md]="{'margin-top':'15%'}"
+[ngStyle.sm]="{'margin-top':'10%'}"  [ngStyle.xl]="{'margin-top':'5%'}"
+style="margin-left: 40%;"
+ -->
  <div *ngFor="let singlepic of ImageName"> 
    <app-singlepic [imageurl]="singlepic">
 
@@ -9,6 +12,3 @@
  </div> 
 
 </div> 
-
-<!-- fxLayoutGap="5%" fxFlexOffset.lg="40%" fxFlexOffset.xs="0%" fxFlexOffset.md="20%"
-fxFlexOffset.sm="16%" -->
