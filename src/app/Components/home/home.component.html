@@ -1,0 +1,14 @@
+<div fxLayout="column" fxFlexOffset.lg="40%" fxFlexOffset.md="30%" fxFlexOffset.sm="20%"  fxLayoutGap="2%" >
+<!-- 
+[ngStyle.xs]="{'margin-top':'14%'}" [ngStyle.md]="{'margin-top':'15%'}"
+[ngStyle.sm]="{'margin-top':'10%'}"  [ngStyle.xl]="{'margin-top':'5%'}"
+style="margin-left: 40%;"
+ -->
+ <div *ngFor="let singlepic of ImageName"> 
+   <app-singlepic [imageurl]="singlepic">
+
+  </app-singlepic> 
+ 
+ </div> 
+
+</div> 

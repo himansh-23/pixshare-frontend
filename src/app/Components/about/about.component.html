@@ -1,0 +1,26 @@
+<div fxFlexOffset.lg="25%" fxFlexOffset.md="20%" fxFlexOffset.sm="10%" style="margin-top:5%;">
+
+  <div class="uploadbox">
+
+    <div class="title">Upload A Pic</div>
+    <br />
+    <div [ngStyle.lg]="{'padding':'100px','min-width':'800px'}">
+      <label class="fontstyle">
+        Location:
+      </label><br>
+      <input class="decor">
+      <br/>
+      <label class="fontstyle">
+        Body:
+      </label>
+      <textarea maxlength=100 class="decor">
+    </textarea>
+      <div fxLayout="row" fxLayoutGap="2%" class="center">
+        <input #opendialog type="file" (change)="filename(opendialog.files[0])" style="display: none">
+        <button mat-raised-button color="primary" (click)="opendialog.click()">Click To Choose File</button>
+        <button mat-raised-button color="primary" (click)="uploadFile()">Upload</button>
+        <p>Selected File :{{fileName}}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,46 +1,37 @@
-<mat-toolbar style="position:fixed; z-index: 1; ">
-  <div style="margin-left:7%;"></div>
-  <img src="../../../assets/facebook_profile_image.png" width="55px" height="55px" alt="pic">
-  <p style="margin-left:10px;">Pixshare</p>
-</mat-toolbar>
+<div  fxLayout="column">
 
-<div fxLayout="row" fxFill>
-  <div class="profile" fxFlex="20%" style="position:fixed;" fxShow [fxShow.md]="false" [fxShow.xs]="false" [fxShow.sm]="false" >
-    <pre> </pre>
-    <mat-card class="card-design">
-      <mat-card-title-group>
-        <img src="../../../assets/back.jpeg" class="fuf" width="80%" height="100%" alt="Profile pic">
-      </mat-card-title-group>
-      <div class="information">
-        <div class="add">himanshu00096@gmail.com</div>
-        <div class="adj">name</div>
-      </div>
-    </mat-card>
-  </div>
+  <mat-toolbar style="z-index:1;position:fixed;" > 
+    <img src="../../../assets/facebook_profile_image.png" width="55px" height="55px" alt="pic">
+    <p style="margin-left:10px;">Pixshare</p>
+  </mat-toolbar>
 
-  <div fxLayout="column"  fxLayoutGap="5%" fxFlexOffset.lg="40%" fxFlexOffset.xs="0%"  fxFlexOffset.md="20%" fxFlexOffset.sm="16%"
-  [ngStyle.xs]="{'margin-top':'14%'}" [ngStyle.md]="{'margin-top':'5%'}" [ngStyle.sm]="{'margin-top':'10%'}"  [ngStyle.lg]="{'margin-top':'5%'}" [ngStyle.xl]="{'margin-top':'5%'}">
-    <!-- <app-singlepic>
 
-    </app-singlepic>
-
-    <app-singlepic>
-
-    </app-singlepic>
-
-    <app-singlepic>
-
-    </app-singlepic>
-
-    <app-singlepic>
-
-    </app-singlepic> -->
-
-    <div *ngFor = "let singlepic of ImageName">
-      <app-singlepic [imageurl]="singlepic">
+  <div fxFlexFill fxLayout="row"  fxFlexOffset.lg="5%" fxFlexOffset.md="5%" fxFlexOffset.xs="13%" fxFlexOffset.sm="10%">
         
-      </app-singlepic>
-    </div> 
+    <div fxFlex="15" style="z-index:1;position:fixed;" fxLayout="column" fxLayoutGap="20px" fxShow [fxShow.md]="false"
+      [fxShow.xs]="false"  [fxShow.sm]="false">
+
+            <img src="../../../assets/captain.jpg" class="fuf" width="100%" alt="Profile pic">
+
+            <div class="adj">Himanshu</div>
+
+            <div fxLayout="column" class=box_toggle>
+                  <button mat-raised-button routerLink="home">Home</button>
+                  <button mat-raised-button routerLink="about">Upload</button>
+                  <button mat-raised-button routerLink="pics">Pic's</button>
+                  <button mat-raised-button routerLink="followers">Followers</button>
+                  <button mat-raised-button routerLink="following">Following</button>
+            </div>
+    </div>
+
+
+    <!-- Router Outlet for routing for home ,About ,Pic's, Followers and following -->
+    <div fxFlex.lg="85" fxFlex.sm="100"  fxFlex.md="100" fxFlex.xs="100">
+         <router-outlet>
+
+         </router-outlet>
+    </div>
 
   </div>
+
 </div>

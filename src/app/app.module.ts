@@ -11,7 +11,11 @@ import { ForgotComponent } from './Components/forgot/forgot.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import {ResetpageComponent} from './Components/resetpage/resetpage.component';
 import { SinglepicComponent } from './Components/singlepic/singlepic.component';
-
+import {HomeComponent} from './Components/home/home.component';
+import { AboutComponent } from './Components/about/about.component';
+import { FollowersComponent } from './Components/followers/followers.component';
+import { FollowingComponent } from './Components/following/following.component';
+import { PicsComponent } from './Components/pics/pics.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,12 @@ import { SinglepicComponent } from './Components/singlepic/singlepic.component';
     ForgotComponent,
     DashboardComponent,
     ResetpageComponent,
-    SinglepicComponent
+    SinglepicComponent,
+    HomeComponent,
+    AboutComponent,
+    FollowersComponent,
+    FollowingComponent,
+    PicsComponent,
     
   ],
   imports: [
