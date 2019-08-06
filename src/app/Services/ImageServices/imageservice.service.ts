@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ImageserviceService {
 
-  private userApiUrl="http://192.168.1.108:8080/user/api/";
+  private userApiUrl="http://localhost:8080/user/api/";
 
   constructor(private httpclient:HttpClient) { }
 

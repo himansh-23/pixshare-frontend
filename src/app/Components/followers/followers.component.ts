@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-followers',
   templateUrl: './followers.component.html',
@@ -7,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FollowersComponent implements OnInit {
 
+   
   constructor() { }
 
   ngOnInit() {
+
+    
   }
 
 }

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ImagefetchService {
 
-  public userApiUrl="http://192.168.1.108:8080/user/api/"
+  public userApiUrl="http://localhost:8080/user/api/"
   constructor(private httpclient:HttpClient) {
 
    }
