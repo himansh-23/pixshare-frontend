@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ImagefetchService {
 
-  public userApiUrl="http://192.168.1.108:8080/user/api/"
+  public userApiUrl="http://localhost:8080/user/api/"
   constructor(private httpclient:HttpClient) {
 
    }
@@ -22,6 +22,11 @@ export class ImagefetchService {
   //  public getUserImageDetails(id:Number){
   //    return this.httpclient.get<string[]>(this.userApiUrl+"personimages?id="+id);
   //  }
+
+   // tslint:disable-next-line: ban-types
+   public getPersonalImage(userId: Number): Observable<string[]> {
+    return this.httpclient.get<string[]>(this.userApiUrl + 'personalImage?userId=' + userId);
+  }
 
 
 }

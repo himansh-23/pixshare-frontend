@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   private ImageName:string[];
   
   constructor(imagesdetails:ImagefetchService) {
-    imagesdetails.getImageDetailis(2).subscribe( details => {
+    imagesdetails.getImageDetailis(3).subscribe( details => {
       this.ImageName=details});
    }
 

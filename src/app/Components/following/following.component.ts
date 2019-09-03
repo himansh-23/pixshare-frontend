@@ -10,9 +10,11 @@ import { MatSnackBar } from '@angular/material';
 export class FollowingComponent implements OnInit {
 
   private users:any[];
+  private followingUser:any[];
   constructor(private imageService:ImageserviceService,private notification:MatSnackBar) {
-   
+
     this.findPeople();
+    this.following();
 
    }
 
@@ -37,6 +39,15 @@ export class FollowingComponent implements OnInit {
         }
   )
 
+  }
+
+  following(){
+    this.imageService.getFollowingUsers(3).subscribe(
+      (value:any[]) =>{
+        this.followingUser=value;
+        console.log(value);
+      }
+    )
   }
 
 }
