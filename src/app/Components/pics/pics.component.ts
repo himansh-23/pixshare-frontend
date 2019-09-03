@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImagefetchService } from 'src/app/Services/imagefetch.service';
 
 @Component({
   selector: 'app-pics',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PicsComponent implements OnInit {
 
-  constructor() { }
+  private ImageName: string[];
+
+  constructor(private imagesdetails: ImagefetchService) {
+   }
 
   ngOnInit() {
-  }
+    this.imagesdetails.getPersonalImage(1).subscribe(
+      imagesDetails => this.ImageName = imagesDetails
+    );
 
+  }
 }

@@ -1,9 +1,9 @@
 <div fxLayout.lg="row" fxLayout.md="row" fxFlexOffset.lg="25%" fxFlexOffset.md="30%" fxFlexOffset.sm="20%"  fxLayoutGap="2%" >
 
-<p>
-  pics works!
-</p>
-<p>
-  sdg
-</p>
+  <div *ngFor="let singlepic of ImageName">
+    <app-singlepic [imageurl]="singlepic">
+
+   </app-singlepic>
+
+  </div>
 </div>

@@ -23,5 +23,10 @@ export class ImagefetchService {
   //    return this.httpclient.get<string[]>(this.userApiUrl+"personimages?id="+id);
   //  }
 
+   // tslint:disable-next-line: ban-types
+   public getPersonalImage(userId: Number): Observable<string[]> {
+    return this.httpclient.get<string[]>(this.userApiUrl + 'personalImage?userId=' + userId);
+  }
+
 
 }

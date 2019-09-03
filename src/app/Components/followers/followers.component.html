@@ -1,3 +1,44 @@
 <div fxFlexOffset.lg="25%" fxFlexOffset.md="20%" fxFlexOffset.sm="10%" style="margin-top:5%;">
-    
+  <div fxLayout="column" fxFill fxLayoutGap="50px">
+      <h4> Your Following Request</h4>
+    <div fxLayout="row " fxLayoutGap="40px">
+      <div *ngFor="let user of persons">
+
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image">
+            </div>
+            <mat-card-title>{{user.name}}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div style="margin-top:5%;">
+              <div fxLayout="row" fxLayoutGap="30%">
+                <button mat-button color="primary" (click)="responseToRequest(user.Id,false)">REMOVE</button>
+                <button mat-button color="primary" (click)="responseToRequest(user.Id,true)">ADD</button>
+              </div>
+
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <h4> Your Follower's</h4>
+    <div fxLayout="row wrap" fxLayoutGap="40px">
+      <div *ngFor="let myfollowers of myfollowers">
+        <mat-card>
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{myfollowers.name}}</mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content>
+            <p> Followers:</p>
+            <p> Following:</p>
+          </mat-card-content>
+        </mat-card>
+
+      </div>
+
+    </div>
+  </div>
 </div>
